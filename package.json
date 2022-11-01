@@ -1,6 +1,6 @@
 {
   "name": "anonlinebd",
-  "homepage": "https://hasibulhossain.github.io/anonlinebd",
+  "homepage": "https://hasibulHossain.github.io/anonlinebd",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,7 +8,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "deploy": "gh-pages -d dist"
+    "deploy": "yarn build && gh-pages -d dist"
   },
   "devDependencies": {
     "typescript": "^4.6.4",
