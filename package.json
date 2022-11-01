@@ -11,6 +11,7 @@
     "deploy": "yarn build && gh-pages -d dist"
   },
   "devDependencies": {
+    "sass": "^1.55.0",
     "typescript": "^4.6.4",
     "vite": "^3.2.0"
   },
