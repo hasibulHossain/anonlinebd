@@ -1,30 +1,33 @@
 import i18next from 'i18next';
 import languageDetector from 'i18next-browser-languagedetector';
+import httpApi from 'i18next-http-backend';
 import './style.css';
 
-async function initi18next() {
+
+/**
+ * Will instantiate i18next object 
+ * @return Promise;
+ */
+export async function initi18next() {
   await i18next
+  .use(httpApi)
   .use(languageDetector)
   .init({
     lng: 'en',
     debug: true,
-    resources: {
-      en: {
-        translation: {
-          home: 'home',
-          about: 'about'
-        }
-      },
-      bn: {
-        translation: {
-          home: 'basha',
-          about: 'shommondhe'
-        }
-      }
+    supportedLngs: ['en', 'bn'],
+    fallbackLng: 'en',
+    backend: {
+      loadPath: "/lang/{{lng}}.json",
     }
   });
 }
 
+/**
+ * It will trigger on language change
+ * @param initialValue - string
+ * @return void
+ */
 function bindLanguageSwitcher (initialValue: string) {
   const languageSwitcher = document.querySelector<HTMLSelectElement>('[data-i18n-switcher]');
   languageSwitcher!.value = initialValue;
@@ -35,6 +38,10 @@ function bindLanguageSwitcher (initialValue: string) {
   })
 }
 
+/**
+ * Render the whole translation on page
+ * @return void
+ */
 function translatePageElements() {
   const translateEl = document.querySelectorAll('[data-i18n-key]');
   
