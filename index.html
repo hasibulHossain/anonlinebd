@@ -6,17 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Noto+Serif+Bengali&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css">
     <title>Anonline</title>
   </head>
-  <body>
-    <main id="app">
-      <select data-i18n-switcher name="i18n-switcher" id="i18n-switcher">
-        <option value="en">English</option>
-        <option value="bn">Bangla</option>
-      </select>
-      <h1 data-i18n-key="home" class="text-xl text-orange-600 border-all">Home</h1>
-      <h1 data-i18n-key="about" class="text-xl text-orange-600 border-all">About</h1>
+  <body class="font-sans text-base">
+    <main id="app" class="p-5">
+      <div class="text-right">
+        <select data-i18n-switcher name="i18n-switcher" id="i18n-switcher">
+          <option value="en">English</option>
+          <option value="bn">Bangla</option>
+        </select>
+      </div>
+      <h1 data-i18n-key="title" class="text-center text-3xl text-slate-800 font-semibold">
+        This site is under construction
+      </h1>
     </main>
     <script type="module" src="/src/main.ts"></script>
   </body>
