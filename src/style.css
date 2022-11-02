@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    .border-top {
+        @apply border-t border-gray-100
+    }
+
+    .border-bottom {
+        @apply border-b border-gray-100
+    }
+
+    .border-all {
+        @apply border border-gray-100
+    }
+}
