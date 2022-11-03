@@ -6,22 +6,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Noto+Serif+Bengali&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/src/style.css">
     <title>Anonline</title>
   </head>
-  <body class="font-sans text-base">
-    <main id="app" class="p-5">
-      <div class="text-right">
-        <select data-i18n-switcher name="i18n-switcher" id="i18n-switcher">
-          <option value="en">English</option>
-          <option value="bn">Bangla</option>
-        </select>
-      </div>
-      <h1 data-i18n-key="title" class="text-center text-3xl text-slate-800 font-semibold">
-        This site is under construction
-      </h1>
+  <body class="font-sans text-base p-8">
+    <!-- 
+      ///**** header ****///
+     -->
+     <section>
+       <header class="flex justify-between items-center max-w-screen-xl mx-auto">
+         <!-- desktop nav -->
+         <nav class="hidden lg:flex flex-1 justify-between items-center">
+           <a class="text-lg my-2 lg:text-sm lg:mx-6 lg:my-0
+            tracking-wide transition duration-300
+           pb-1 border-transparent hover:border-primary-500 focus:text-primary-500 flex items-center font-black border-b-0 text-2xl! ml-0!" href="#">
+             <img class="w-10 mr-3" src="" alt="logo">
+             Anonline
+           </a>
+           <div class="inline-block">
+             <a 
+             class="text-lg my-2 lg:text-sm lg:mx-6 lg:my-0 font-semibold tracking-wide transition duration-300 pb-1 border-b-2 border-transparent hover:border-primary-500 focus:text-primary-500" href="#">
+             Home
+             </a>
+             <a 
+             class="text-lg my-2 lg:text-sm lg:mx-6 lg:my-0 font-semibold tracking-wide transition duration-300 pb-1 border-b-2 border-transparent hover:border-primary-500 focus:text-primary-500" href="#">
+             About
+             </a>
+             <a 
+             class="text-lg my-2 lg:text-sm lg:mx-6 lg:my-0 font-semibold tracking-wide transition duration-300 pb-1 border-b-2 border-transparent hover:border-primary-500 focus:text-primary-500" href="#">
+             Contact
+             </a>
+           </div>
+         </nav>
+   
+         <!-- mobile nav -->
+         <nav class="flex flex-1 items-center justify-between lg:hidden">
+           <a class="text-lg my-2 lg:text-sm lg:mx-6 lg:my-0
+            tracking-wide transition duration-300
+           pb-1 border-transparent hover:border-primary-500 focus:text-primary-500 flex items-center font-black border-b-0 text-2xl! ml-0!" href="#">
+             <img class="w-10 mr-3" src="" alt="logo">
+             Anonline
+           </a>
+   
+           <div class="lg:hidden z-10 fixed top-0 inset-x-full mx-4 my-6 p-8 border text-center rounded-lg text-gray-900 bg-white">
+             <div class="flex flex-col items-center">
+               <a class="text-lg my-2 lg:text-sm lg:mx-6 lg:my-0 font-semibold tracking-wide transition duration-300 pb-1 border-b-2 border-transparent hover:border-primary-500 focus:text-primary-500" href="#">Home</a>
+               <a class="text-lg my-2 lg:text-sm lg:mx-6 lg:my-0 font-semibold tracking-wide transition duration-300 pb-1 border-b-2 border-transparent hover:border-primary-500 focus:text-primary-500" href="#">About</a>
+               <a class="text-lg my-2 lg:text-sm lg:mx-6 lg:my-0 font-semibold tracking-wide transition duration-300 pb-1 border-b-2 border-transparent hover:border-primary-500 focus:text-primary-500" href="#">Contact us</a>
+             </div>
+           </div>
+           <button class="w-6 h-6 bg-primary-500 lg:hidden z-20 focus:outline-none hover:text-primary-500 transition duration-300">
+           </button>
+         </nav>
+       </header>
+       <div class="relative">
+          <div class="py-20 lg:py-24">
+            <div class="flex flex-col lg:flex-row justify-between items-center lg:pt-16 max-w-screen-2xl mx-auto sm:px-8">
+
+              <div class="mr-auto lg:mr-0 max-w-lg lg:max-w-xl xl:max-w-2xl">
+                <h2 class="text-4xl sm:text-5xl font-black tracking-wide text-left text-primary-900 leading-snug xl:text-6xl">
+                  Better, Faster and Cheaper Cloud.
+                </h2>
+              </div>
+
+              <div class="mr-auto lg:mr-0 max-w-lg lg:max-w-xl xl:max-w-2xl"></div>
+            </div>
+          </div>
+       </div>
+     </section>
+    
+    <main id="app" class="">
     </main>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
+
+<!-- navlink -->
+<a class="text-lg my-2 lg:text-sm lg:mx-6 lg:my-0
+font-semibold tracking-wide transition duration-300
+pb-1 border-b-2 border-transparent hover:border-primary-500 focus:text-primary-500" href="#"></a>
