@@ -1,22 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="scroll-smooth" lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/src/style.css">
     <title>Anonline</title>
   </head>
   <body class="font-sans text-base p-8">
+    <div class="navigation">
+      <div class="nav-logo"><a href="#" class="logo-link">Lato</a></div>
+      <input type="checkbox" id="checkbox">
+      <label for="checkbox" id="navigation-button">
+          <span class="three-bar"></span>
+      </label>
+      <div class="navigation-bg"></div>
+      <nav class="nav">
+          <ul class="nav-list">
+              <li class="nav-item"><a href="#price-section" class="nav-link">Home</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Contact us</a></li>
+          </ul>
+      </nav>
+    </div>
     <!-- 
       ///**** header ****///
      -->
      <section>
-       <header class="flex justify-between items-center max-w-screen-xl mx-auto">
-         <!-- desktop nav -->
+       <!-- <header class="flex justify-between items-center max-w-screen-xl mx-auto">
+         desktop nav
          <nav class="hidden lg:flex flex-1 justify-between items-center">
            <a class="text-lg my-2 lg:text-sm lg:mx-6 lg:my-0
             tracking-wide transition duration-300
@@ -26,21 +41,21 @@
            </a>
            <div class="inline-block">
              <a 
-             class="text-lg my-2 lg:text-sm lg:mx-6 lg:my-0 font-semibold tracking-wide transition duration-300 pb-1 border-b-2 border-transparent hover:border-primary-500 focus:text-primary-500" href="#">
+             class="text-lg my-2 lg:text-sm lg:mx-6 lg:my-0 font-medium tracking-wide transition duration-300 pb-1 border-b-2 border-transparent hover:border-primary-500 focus:text-primary-500" href="#">
              Home
              </a>
              <a 
-             class="text-lg my-2 lg:text-sm lg:mx-6 lg:my-0 font-semibold tracking-wide transition duration-300 pb-1 border-b-2 border-transparent hover:border-primary-500 focus:text-primary-500" href="#">
+             class="text-lg my-2 lg:text-sm lg:mx-6 lg:my-0 font-medium tracking-wide transition duration-300 pb-1 border-b-2 border-transparent hover:border-primary-500 focus:text-primary-500" href="#">
              About
              </a>
              <a 
-             class="text-lg my-2 lg:text-sm lg:mx-6 lg:my-0 font-semibold tracking-wide transition duration-300 pb-1 border-b-2 border-transparent hover:border-primary-500 focus:text-primary-500" href="#">
+             class="text-lg my-2 lg:text-sm lg:mx-6 lg:my-0 font-medium tracking-wide transition duration-300 pb-1 border-b-2 border-transparent hover:border-primary-500 focus:text-primary-500" href="#">
              Contact
              </a>
            </div>
          </nav>
    
-         <!-- mobile nav -->
+         mobile nav
          <nav class="flex flex-1 items-center justify-between lg:hidden">
            <a class="text-lg my-2 lg:text-sm lg:mx-6 lg:my-0
             tracking-wide transition duration-300
@@ -51,38 +66,302 @@
    
            <div class="lg:hidden z-10 fixed top-0 inset-x-full mx-4 my-6 p-8 border text-center rounded-lg text-gray-900 bg-white">
              <div class="flex flex-col items-center">
-               <a class="text-lg my-2 lg:text-sm lg:mx-6 lg:my-0 font-semibold tracking-wide transition duration-300 pb-1 border-b-2 border-transparent hover:border-primary-500 focus:text-primary-500" href="#">Home</a>
-               <a class="text-lg my-2 lg:text-sm lg:mx-6 lg:my-0 font-semibold tracking-wide transition duration-300 pb-1 border-b-2 border-transparent hover:border-primary-500 focus:text-primary-500" href="#">About</a>
-               <a class="text-lg my-2 lg:text-sm lg:mx-6 lg:my-0 font-semibold tracking-wide transition duration-300 pb-1 border-b-2 border-transparent hover:border-primary-500 focus:text-primary-500" href="#">Contact us</a>
+               <a class="text-lg my-2 lg:text-sm lg:mx-6 lg:my-0 font-medium tracking-wide transition duration-300 pb-1 border-b-2 border-transparent hover:border-primary-500 focus:text-primary-500" href="#">Home</a>
+               <a class="text-lg my-2 lg:text-sm lg:mx-6 lg:my-0 font-medium tracking-wide transition duration-300 pb-1 border-b-2 border-transparent hover:border-primary-500 focus:text-primary-500" href="#">About</a>
+               <a class="text-lg my-2 lg:text-sm lg:mx-6 lg:my-0 font-medium tracking-wide transition duration-300 pb-1 border-b-2 border-transparent hover:border-primary-500 focus:text-primary-500" href="#">Contact us</a>
              </div>
            </div>
            <button class="w-6 h-6 bg-primary-500 lg:hidden z-20 focus:outline-none hover:text-primary-500 transition duration-300">
            </button>
          </nav>
-       </header>
+       </header> -->
        <div class="relative">
           <div class="py-20 lg:py-24">
-            <div class="flex flex-col lg:flex-row justify-between items-center lg:pt-16 max-w-screen-2xl mx-auto sm:px-8">
+            <div class="flex flex-col lg:flex-row justify-between items-center lg:pt-12 max-w-screen-2xl mx-auto sm:px-8">
 
               <div class="mr-auto lg:mr-0 max-w-lg lg:max-w-xl xl:max-w-2xl">
-                <h2 class="text-4xl sm:text-5xl font-black tracking-wide text-left text-primary-900 leading-snug xl:text-6xl">
+                <h2 class="leading-normal text-4xl font-black tracking-wide text-left text-primary-900 lg:text-7xl lg:leading-snug">
                   Better, Faster and Cheaper Cloud.
                 </h2>
+                <p class="max-w-lg mt-4 text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+
+                <a href="#price-section" class="px-8 font-bold bg-primary-500 text-gray-100 hocus:bg-primary-700 hocus:text-gray-200 focus:shadow-outline focus:outline-none transition duration-300 mt-8 inline-block w-56 tracking-wide text-center py-5 rounded-full">Our Packages</a>
+                
+                <div class="pt-4">
+                  <div class="flex items-center m-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-primary-500"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                      <span class="font-medium pl-2">Available in 7 location</span>
+                  </div>
+                  <div class="flex items-center m-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-primary-500"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                      <span class="font-medium pl-2">Available in 7 location</span>
+                  </div>
+                  <div class="flex items-center m-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-primary-500"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                      <span class="font-medium pl-2">Available in 7 location</span>
+                  </div>
+                </div>
               </div>
 
-              <div class="mr-auto lg:mr-0 max-w-lg lg:max-w-xl xl:max-w-2xl"></div>
+              <div class="mr-auto lg:mr-0 max-w-lg lg:max-w-xl xl:max-w-2xl self-start">
+                <div class="w-96 h-96 bg-primary-100 "></div>
+              </div>
             </div>
           </div>
        </div>
      </section>
     
-    <main id="app" class="">
-    </main>
+     <!-- price section -->
+
+     <section id="price-section" class="bg-slate-100/50 -mx-8 py-32">
+      <div class="container">
+        <!-- price card container -->
+        <div class="flex flex-col lg:flex-row lg:justify-center lg:items-start lg:gap-11">
+          <!-- price card -->
+          <div class="max-w-xs px-5 py-8 bg-white rounded-lg drop-shadow-md">
+            <p class="text-lg font-bold text-center pb-8">PERSONAL</p>
+            <div class="flex items-center pb-8 gap-3">
+              <svg class="w-8 h-8 text-primary-500" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 22.75H9C3.57 22.75 1.25 20.43 1.25 15V9C1.25 3.57 3.57 1.25 9 1.25H15C20.43 1.25 22.75 3.57 22.75 9V15C22.75 20.43 20.43 22.75 15 22.75ZM9 2.75C4.39 2.75 2.75 4.39 2.75 9V15C2.75 19.61 4.39 21.25 9 21.25H15C19.61 21.25 21.25 19.61 21.25 15V9C21.25 4.39 19.61 2.75 15 2.75H9Z" fill="currentcolor"/>
+                <path d="M10.1801 17.9C9.99008 17.9 9.80008 17.83 9.65008 17.68L6.61008 14.64C6.32008 14.35 6.32008 13.87 6.61008 13.58C6.90008 13.29 7.38008 13.29 7.67008 13.58L10.7101 16.62C11.0001 16.91 11.0001 17.39 10.7101 17.68C10.5701 17.83 10.3801 17.9 10.1801 17.9Z" fill="currentcolor"/>
+                <path d="M10.1802 17.9C9.77018 17.9 9.43018 17.56 9.43018 17.15V6.84998C9.43018 6.43998 9.77018 6.09998 10.1802 6.09998C10.5902 6.09998 10.9302 6.43998 10.9302 6.84998V17.16C10.9302 17.57 10.6002 17.9 10.1802 17.9Z" fill="currentcolor"/>
+                <path d="M16.8598 10.64C16.6698 10.64 16.4798 10.57 16.3298 10.42L13.2898 7.38004C12.9998 7.09004 12.9998 6.61004 13.2898 6.32004C13.5798 6.03004 14.0598 6.03004 14.3498 6.32004L17.3898 9.36004C17.6798 9.65004 17.6798 10.13 17.3898 10.42C17.2398 10.56 17.0498 10.64 16.8598 10.64Z" fill="currentcolor"/>
+                <path d="M13.8198 17.9C13.4098 17.9 13.0698 17.56 13.0698 17.15V6.84998C13.0698 6.43998 13.4098 6.09998 13.8198 6.09998C14.2298 6.09998 14.5698 6.43998 14.5698 6.84998V17.16C14.5698 17.57 14.2298 17.9 13.8198 17.9Z" fill="currentcolor"/>
+                </svg>                
+              <span class="text-3xl font-bold">8 Mbps</span>
+            </div>
+            <p>perfect for when you want to host your personal blog or a hobby side project</p>
+  
+            <div class="border-top my-8"></div>
+
+            <div class="pb-5">
+              <div class="flex items-center my-5">
+                <svg viewBox="0 0 24 24" class="w-5 h-5 text-primary-500"><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10     10zm-.997-6l7.07-7.071-1.414-1.414-5.656 5.657-2.829-2.829-1.414 1.414L11.003 16z" fill="currentColor"></path></svg>
+                  <span class="font-semibold pl-2 text-primary-900">Available in 7 location</span>
+              </div>
+              <div class="flex items-center my-5">
+                <svg viewBox="0 0 24 24" class="w-5 h-5 text-primary-500"><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10     10zm-.997-6l7.07-7.071-1.414-1.414-5.656 5.657-2.829-2.829-1.414 1.414L11.003 16z" fill="currentColor"></path></svg>
+                  <span class="font-semibold pl-2 text-primary-900">Available in 7 location</span>
+              </div>
+              <div class="flex items-center my-5">
+                <svg viewBox="0 0 24 24" class="w-5 h-5 text-primary-500"><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10     10zm-.997-6l7.07-7.071-1.414-1.414-5.656 5.657-2.829-2.829-1.414 1.414L11.003 16z" fill="currentColor"></path></svg>
+                  <span class="font-semibold pl-2 text-primary-900">Available in 7 location</span>
+              </div>
+            </div>
+
+            <!-- monthly price -->
+            <div class="flex items-center justify-center px-6 font-bold border-2 border-primary-500 tracking-wide text-center py-3 rounded-md">
+              <span class="text-2xl font-bold">$500</span>
+              <span class="text-lg font-semibold">/month</span>
+            </div>
+          </div>
+          <!-- price card -->
+          <div class="max-w-xs px-5 py-8 bg-white rounded-lg drop-shadow-md">
+            <p class="text-lg font-bold text-center pb-8">PERSONAL</p>
+            <div class="flex items-center pb-8 gap-3">
+              <svg class="w-8 h-8 text-primary-500" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 22.75H9C3.57 22.75 1.25 20.43 1.25 15V9C1.25 3.57 3.57 1.25 9 1.25H15C20.43 1.25 22.75 3.57 22.75 9V15C22.75 20.43 20.43 22.75 15 22.75ZM9 2.75C4.39 2.75 2.75 4.39 2.75 9V15C2.75 19.61 4.39 21.25 9 21.25H15C19.61 21.25 21.25 19.61 21.25 15V9C21.25 4.39 19.61 2.75 15 2.75H9Z" fill="currentcolor"/>
+                <path d="M10.1801 17.9C9.99008 17.9 9.80008 17.83 9.65008 17.68L6.61008 14.64C6.32008 14.35 6.32008 13.87 6.61008 13.58C6.90008 13.29 7.38008 13.29 7.67008 13.58L10.7101 16.62C11.0001 16.91 11.0001 17.39 10.7101 17.68C10.5701 17.83 10.3801 17.9 10.1801 17.9Z" fill="currentcolor"/>
+                <path d="M10.1802 17.9C9.77018 17.9 9.43018 17.56 9.43018 17.15V6.84998C9.43018 6.43998 9.77018 6.09998 10.1802 6.09998C10.5902 6.09998 10.9302 6.43998 10.9302 6.84998V17.16C10.9302 17.57 10.6002 17.9 10.1802 17.9Z" fill="currentcolor"/>
+                <path d="M16.8598 10.64C16.6698 10.64 16.4798 10.57 16.3298 10.42L13.2898 7.38004C12.9998 7.09004 12.9998 6.61004 13.2898 6.32004C13.5798 6.03004 14.0598 6.03004 14.3498 6.32004L17.3898 9.36004C17.6798 9.65004 17.6798 10.13 17.3898 10.42C17.2398 10.56 17.0498 10.64 16.8598 10.64Z" fill="currentcolor"/>
+                <path d="M13.8198 17.9C13.4098 17.9 13.0698 17.56 13.0698 17.15V6.84998C13.0698 6.43998 13.4098 6.09998 13.8198 6.09998C14.2298 6.09998 14.5698 6.43998 14.5698 6.84998V17.16C14.5698 17.57 14.2298 17.9 13.8198 17.9Z" fill="currentcolor"/>
+                </svg>                
+              <span class="text-3xl font-bold">10 Mbps</span>
+            </div>
+            <p>perfect for when you want to host your personal blog or a hobby side project</p>
+  
+            <div class="border-top my-8"></div>
+
+            <div class="pb-5">
+              <div class="flex items-center my-5">
+                <svg viewBox="0 0 24 24" class="w-5 h-5 text-primary-500"><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10     10zm-.997-6l7.07-7.071-1.414-1.414-5.656 5.657-2.829-2.829-1.414 1.414L11.003 16z" fill="currentColor"></path></svg>
+                  <span class="font-semibold pl-2 text-primary-900">Available in 7 location</span>
+              </div>
+              <div class="flex items-center my-5">
+                <svg viewBox="0 0 24 24" class="w-5 h-5 text-primary-500"><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10     10zm-.997-6l7.07-7.071-1.414-1.414-5.656 5.657-2.829-2.829-1.414 1.414L11.003 16z" fill="currentColor"></path></svg>
+                  <span class="font-semibold pl-2 text-primary-900">Available in 7 location</span>
+              </div>
+              <div class="flex items-center my-5">
+                <svg viewBox="0 0 24 24" class="w-5 h-5 text-primary-500"><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10     10zm-.997-6l7.07-7.071-1.414-1.414-5.656 5.657-2.829-2.829-1.414 1.414L11.003 16z" fill="currentColor"></path></svg>
+                  <span class="font-semibold pl-2 text-primary-900">Available in 7 location</span>
+              </div>
+            </div>
+
+            <!-- monthly price -->
+            <div class="flex items-center justify-center px-6 font-bold border-2 border-primary-500 tracking-wide text-center py-3 rounded-md">
+              <span class="text-2xl font-bold">$500</span>
+              <span class="text-lg font-semibold">/month</span>
+            </div>
+          </div>
+          <!-- price card -->
+          <div class="max-w-xs px-5 py-8 bg-white rounded-lg drop-shadow-md">
+            <p class="text-lg font-bold text-center pb-8">PERSONAL</p>
+            <div class="flex items-center pb-8 gap-3">
+              <svg class="w-8 h-8 text-primary-500" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 22.75H9C3.57 22.75 1.25 20.43 1.25 15V9C1.25 3.57 3.57 1.25 9 1.25H15C20.43 1.25 22.75 3.57 22.75 9V15C22.75 20.43 20.43 22.75 15 22.75ZM9 2.75C4.39 2.75 2.75 4.39 2.75 9V15C2.75 19.61 4.39 21.25 9 21.25H15C19.61 21.25 21.25 19.61 21.25 15V9C21.25 4.39 19.61 2.75 15 2.75H9Z" fill="currentcolor"/>
+                <path d="M10.1801 17.9C9.99008 17.9 9.80008 17.83 9.65008 17.68L6.61008 14.64C6.32008 14.35 6.32008 13.87 6.61008 13.58C6.90008 13.29 7.38008 13.29 7.67008 13.58L10.7101 16.62C11.0001 16.91 11.0001 17.39 10.7101 17.68C10.5701 17.83 10.3801 17.9 10.1801 17.9Z" fill="currentcolor"/>
+                <path d="M10.1802 17.9C9.77018 17.9 9.43018 17.56 9.43018 17.15V6.84998C9.43018 6.43998 9.77018 6.09998 10.1802 6.09998C10.5902 6.09998 10.9302 6.43998 10.9302 6.84998V17.16C10.9302 17.57 10.6002 17.9 10.1802 17.9Z" fill="currentcolor"/>
+                <path d="M16.8598 10.64C16.6698 10.64 16.4798 10.57 16.3298 10.42L13.2898 7.38004C12.9998 7.09004 12.9998 6.61004 13.2898 6.32004C13.5798 6.03004 14.0598 6.03004 14.3498 6.32004L17.3898 9.36004C17.6798 9.65004 17.6798 10.13 17.3898 10.42C17.2398 10.56 17.0498 10.64 16.8598 10.64Z" fill="currentcolor"/>
+                <path d="M13.8198 17.9C13.4098 17.9 13.0698 17.56 13.0698 17.15V6.84998C13.0698 6.43998 13.4098 6.09998 13.8198 6.09998C14.2298 6.09998 14.5698 6.43998 14.5698 6.84998V17.16C14.5698 17.57 14.2298 17.9 13.8198 17.9Z" fill="currentcolor"/>
+                </svg>                
+              <span class="text-3xl font-bold">20 Mbps</span>
+            </div>
+            <p>perfect for when you want to host your personal blog or a hobby side project</p>
+  
+            <div class="border-top my-8"></div>
+
+            <div class="pb-5">
+              <div class="flex items-center my-5">
+                <svg viewBox="0 0 24 24" class="w-5 h-5 text-primary-500"><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10     10zm-.997-6l7.07-7.071-1.414-1.414-5.656 5.657-2.829-2.829-1.414 1.414L11.003 16z" fill="currentColor"></path></svg>
+                  <span class="font-semibold pl-2 text-primary-900">Available in 7 location</span>
+              </div>
+              <div class="flex items-center my-5">
+                <svg viewBox="0 0 24 24" class="w-5 h-5 text-primary-500"><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10     10zm-.997-6l7.07-7.071-1.414-1.414-5.656 5.657-2.829-2.829-1.414 1.414L11.003 16z" fill="currentColor"></path></svg>
+                  <span class="font-semibold pl-2 text-primary-900">Available in 7 location</span>
+              </div>
+              <div class="flex items-center my-5">
+                <svg viewBox="0 0 24 24" class="w-5 h-5 text-primary-500"><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10     10zm-.997-6l7.07-7.071-1.414-1.414-5.656 5.657-2.829-2.829-1.414 1.414L11.003 16z" fill="currentColor"></path></svg>
+                  <span class="font-semibold pl-2 text-primary-900">Available in 7 location</span>
+              </div>
+            </div>
+
+            <!-- monthly price -->
+            <div class="flex items-center justify-center px-6 font-bold border-2 border-primary-500 tracking-wide text-center py-3 rounded-md">
+              <span class="text-2xl font-bold">$500</span>
+              <span class="text-lg font-semibold">/month</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+     </section>
+
+     <!-- feature section -->
+     <section id="price-section" class="-mx-8 py-32">
+      <div class="container">
+        <div class="text-5xl font-black text-center mb-8">
+          Amazing 
+          <span class="text-primary-500"> Features</span>
+        </div>
+
+        <p class="mb-12 max-w-lg text-center mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam eaque temporibus perspiciatis hic esse laudantium nostrum rem.</p>
+        
+        <!-- Feature card container-->
+        <div class="grid grid-cols-3 justify-center gap-16 mx-auto max-w-5xl">
+          <!-- feature card -->
+          <div class="flex flex-row justify-start items-start gap-5">
+            <div class="flex-none p-5 border-all rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M3.783 2.826L12 1l8.217 1.826a1 1 0 0 1 .783.976v9.987a6 6 0 0 1-2.672 4.992L12 23l-6.328-4.219A6 6 0 0 1 3 13.79V3.802a1 1 0 0 1 .783-.976zM5 4.604v9.185a4 4 0 0 0 1.781 3.328L12 20.597l5.219-3.48A4 4 0 0 0 19 13.79V4.604L12 3.05 5 4.604zM13 10h3l-5 7v-5H8l5-7v5z" fill="rgba(100,21,255,1)"/></svg>
+            </div>
+            <div>
+              <span class="block text-2xl font-bold">Secure</span>
+              <p class="max-w-[200px] mt-3">We strictly only deal with vendors that provide top notch security.</p>
+            </div>
+          </div>
+          <!-- feature card -->
+          <div class="flex flex-row justify-start items-start gap-5">
+            <div class="flex-none p-5 border-all rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M3.783 2.826L12 1l8.217 1.826a1 1 0 0 1 .783.976v9.987a6 6 0 0 1-2.672 4.992L12 23l-6.328-4.219A6 6 0 0 1 3 13.79V3.802a1 1 0 0 1 .783-.976zM5 4.604v9.185a4 4 0 0 0 1.781 3.328L12 20.597l5.219-3.48A4 4 0 0 0 19 13.79V4.604L12 3.05 5 4.604zM13 10h3l-5 7v-5H8l5-7v5z" fill="rgba(100,21,255,1)"/></svg>
+            </div>
+            <div>
+              <span class="block text-2xl font-bold">Secure</span>
+              <p class="max-w-[200px] mt-3">We strictly only deal with vendors that provide top notch security.</p>
+            </div>
+          </div>
+          <!-- feature card -->
+          <div class="flex flex-row justify-start items-start gap-5">
+            <div class="flex-none p-5 border-all rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M3.783 2.826L12 1l8.217 1.826a1 1 0 0 1 .783.976v9.987a6 6 0 0 1-2.672 4.992L12 23l-6.328-4.219A6 6 0 0 1 3 13.79V3.802a1 1 0 0 1 .783-.976zM5 4.604v9.185a4 4 0 0 0 1.781 3.328L12 20.597l5.219-3.48A4 4 0 0 0 19 13.79V4.604L12 3.05 5 4.604zM13 10h3l-5 7v-5H8l5-7v5z" fill="rgba(100,21,255,1)"/></svg>
+            </div>
+            <div>
+              <span class="block text-2xl font-bold">Secure</span>
+              <p class="max-w-[200px] mt-3">We strictly only deal with vendors that provide top notch security.</p>
+            </div>
+          </div>
+          <!-- feature card -->
+          <div class="flex flex-row justify-start items-start gap-5">
+            <div class="flex-none p-5 border-all rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M3.783 2.826L12 1l8.217 1.826a1 1 0 0 1 .783.976v9.987a6 6 0 0 1-2.672 4.992L12 23l-6.328-4.219A6 6 0 0 1 3 13.79V3.802a1 1 0 0 1 .783-.976zM5 4.604v9.185a4 4 0 0 0 1.781 3.328L12 20.597l5.219-3.48A4 4 0 0 0 19 13.79V4.604L12 3.05 5 4.604zM13 10h3l-5 7v-5H8l5-7v5z" fill="rgba(100,21,255,1)"/></svg>
+            </div>
+            <div>
+              <span class="block text-2xl font-bold">Secure</span>
+              <p class="max-w-[200px] mt-3">We strictly only deal with vendors that provide top notch security.</p>
+            </div>
+          </div>
+          <!-- feature card -->
+          <div class="flex flex-row justify-start items-start gap-5">
+            <div class="flex-none p-5 border-all rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M3.783 2.826L12 1l8.217 1.826a1 1 0 0 1 .783.976v9.987a6 6 0 0 1-2.672 4.992L12 23l-6.328-4.219A6 6 0 0 1 3 13.79V3.802a1 1 0 0 1 .783-.976zM5 4.604v9.185a4 4 0 0 0 1.781 3.328L12 20.597l5.219-3.48A4 4 0 0 0 19 13.79V4.604L12 3.05 5 4.604zM13 10h3l-5 7v-5H8l5-7v5z" fill="rgba(100,21,255,1)"/></svg>
+            </div>
+            <div>
+              <span class="block text-2xl font-bold">Secure</span>
+              <p class="max-w-[200px] mt-3">We strictly only deal with vendors that provide top notch security.</p>
+            </div>
+          </div>
+          <!-- feature card -->
+          <div class="flex flex-row justify-start items-start gap-5">
+            <div class="flex-none p-5 border-all rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M3.783 2.826L12 1l8.217 1.826a1 1 0 0 1 .783.976v9.987a6 6 0 0 1-2.672 4.992L12 23l-6.328-4.219A6 6 0 0 1 3 13.79V3.802a1 1 0 0 1 .783-.976zM5 4.604v9.185a4 4 0 0 0 1.781 3.328L12 20.597l5.219-3.48A4 4 0 0 0 19 13.79V4.604L12 3.05 5 4.604zM13 10h3l-5 7v-5H8l5-7v5z" fill="rgba(100,21,255,1)"/></svg>
+            </div>
+            <div>
+              <span class="block text-2xl font-bold">Secure</span>
+              <p class="max-w-[200px] mt-3">We strictly only deal with vendors that provide top notch security.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+     </section>
     <script type="module" src="/src/main.ts"></script>
   </body>
-</html>
+  </html>
+  
+  <!-- <div id="accordion-collapse" data-accordion="collapse">
+    <h2 id="accordion-collapse-heading-1">
+      <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 rounded-t-xl dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800" data-accordion-target="#accordion-collapse-body-1" aria-expanded="true" aria-controls="accordion-collapse-body-1">
+        <span>What is Flowbite?</span>
+        <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+      </button>
+    </h2>
+    <div id="accordion-collapse-body-1" class="hidden" aria-labelledby="accordion-collapse-heading-1">
+      <div class="p-5 font-light border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+        <p class="mb-2 text-gray-500 dark:text-gray-400">Flowbite is an open-source library of interactive components built on top of Tailwind CSS including buttons, dropdowns, modals, navbars, and more.</p>
+        <p class="text-gray-500 dark:text-gray-400">Check out this guide to learn how to <a href="/docs/getting-started/introduction/" class="text-blue-600 dark:text-blue-500 hover:underline">get started</a> and start developing websites even faster with components on top of Tailwind CSS.</p>
+      </div>
+    </div>
+    <h2 id="accordion-collapse-heading-2">
+      <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800" data-accordion-target="#accordion-collapse-body-2" aria-expanded="false" aria-controls="accordion-collapse-body-2">
+        <span>Is there a Figma file available?</span>
+        <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+      </button>
+    </h2>
+    <div id="accordion-collapse-body-2" class="hidden" aria-labelledby="accordion-collapse-heading-2">
+      <div class="p-5 font-light border border-b-0 border-gray-200 dark:border-gray-700">
+        <p class="mb-2 text-gray-500 dark:text-gray-400">Flowbite is first conceptualized and designed using the Figma software so everything you see in the library has a design equivalent in our Figma file.</p>
+        <p class="text-gray-500 dark:text-gray-400">Check out the <a href="https://flowbite.com/figma/" class="text-blue-600 dark:text-blue-500 hover:underline">Figma design system</a> based on the utility classes from Tailwind CSS and components from Flowbite.</p>
+      </div>
+    </div>
+    <h2 id="accordion-collapse-heading-3">
+      <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800" data-accordion-target="#accordion-collapse-body-3" aria-expanded="false" aria-controls="accordion-collapse-body-3">
+        <span>What are the differences between Flowbite and Tailwind UI?</span>
+        <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+      </button>
+    </h2>
+    <div id="accordion-collapse-body-3" class="hidden" aria-labelledby="accordion-collapse-heading-3">
+      <div class="p-5 font-light border border-t-0 border-gray-200 dark:border-gray-700">
+        <p class="mb-2 text-gray-500 dark:text-gray-400">The main difference is that the core components from Flowbite are open source under the MIT license, whereas Tailwind UI is a paid product. Another difference is that Flowbite relies on smaller and standalone components, whereas Tailwind UI offers sections of pages.</p>
+        <p class="mb-2 text-gray-500 dark:text-gray-400">However, we actually recommend using both Flowbite, Flowbite Pro, and even Tailwind UI as there is no technical reason stopping you from using the best of two worlds.</p>
+        <p class="mb-2 text-gray-500 dark:text-gray-400">Learn more about these technologies:</p>
+        <ul class="pl-5 text-gray-500 list-disc dark:text-gray-400">
+          <li><a href="https://flowbite.com/pro/" class="text-blue-600 dark:text-blue-500 hover:underline">Flowbite Pro</a></li>
+          <li><a href="https://tailwindui.com/" rel="nofollow" class="text-blue-600 dark:text-blue-500 hover:underline">Tailwind UI</a></li>
+        </ul>
+      </div>
+    </div>
+  </div> -->
 
-<!-- navlink -->
-<a class="text-lg my-2 lg:text-sm lg:mx-6 lg:my-0
-font-semibold tracking-wide transition duration-300
-pb-1 border-b-2 border-transparent hover:border-primary-500 focus:text-primary-500" href="#"></a>
+
+
+  <!-- background svg -->
+
+  <!-- <svg width="600" height="600" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" class="ThreeColWithSideImage__DecoratorBlob-i1jy54-8 kNQlIF"><g transform="translate(300,300)"><path d="M125,-160.4C159.9,-146.7,184.6,-107.3,178.8,-70.9C173.1,-34.4,137,-0.8,128.8,47.3C120.7,95.5,140.6,158.2,123.8,198.4C107,238.6,53.5,256.3,5.4,248.9C-42.7,241.5,-85.4,208.9,-112.7,172.1C-140,135.3,-151.8,94.2,-146.3,59.7C-140.8,25.1,-117.9,-2.9,-104,-30.1C-90.1,-57.3,-85,-83.7,-69.1,-103.5C-53.3,-123.4,-26.6,-136.7,9.2,-149.4C45.1,-162,90.1,-174,125,-160.4Z" fill="#FFB4BC"></path></g></svg> -->
