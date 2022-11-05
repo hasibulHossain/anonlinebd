@@ -10,6 +10,9 @@ module.exports = {
   theme: {
     container: {
       center: true,
+      padding: {
+        DEFAULT: '1rem'
+      }
     },
     colors: {
       primary: {
