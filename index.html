@@ -12,9 +12,8 @@
   </head>
   <body class="font-sans text-sm md:text-base">
     <!-- backdrop -->
-
     <div class="main-backdrop hidden fixed inset-0 bg-black/60 z-30"></div>
-     <section class="relative px-4 md:px-8">
+     <section class="overflow-x-hidden relative px-4 md:px-8">
       <div class="hidden absolute bottom-0 -left-96 z-10 opacity-10 md:block md:-left-80 md:opacity-20">
         <svg width="600" height="600" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" class="ThreeColWithSideImage__DecoratorBlob-i1jy54-8 kNQlIF"><g transform="translate(300,300)"><path d="M125,-160.4C159.9,-146.7,184.6,-107.3,178.8,-70.9C173.1,-34.4,137,-0.8,128.8,47.3C120.7,95.5,140.6,158.2,123.8,198.4C107,238.6,53.5,256.3,5.4,248.9C-42.7,241.5,-85.4,208.9,-112.7,172.1C-140,135.3,-151.8,94.2,-146.3,59.7C-140.8,25.1,-117.9,-2.9,-104,-30.1C-90.1,-57.3,-85,-83.7,-69.1,-103.5C-53.3,-123.4,-26.6,-136.7,9.2,-149.4C45.1,-162,90.1,-174,125,-160.4Z" fill="#FFB4BC"></path></g></svg>
       </div>
@@ -30,7 +29,7 @@
             <svg class="text-white w-4 h-4" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M17.45 22.75C16.32 22.75 15.13 22.48 13.9 21.96C12.7 21.45 11.49 20.75 10.31 19.9C9.14 19.04 8.01 18.08 6.94 17.03C5.88 15.96 4.92 14.83 4.07 13.67C3.21 12.47 2.52 11.27 2.03 10.11C1.51 8.87 1.25 7.67 1.25 6.54C1.25 5.76 1.39 5.02 1.66 4.33C1.94 3.62 2.39 2.96 3 2.39C3.77 1.63 4.65 1.25 5.59 1.25C5.98 1.25 6.38 1.34 6.72 1.5C7.11 1.68 7.44 1.95 7.68 2.31L10 5.58C10.21 5.87 10.37 6.15 10.48 6.43C10.61 6.73 10.68 7.03 10.68 7.32C10.68 7.7 10.57 8.07 10.36 8.42C10.21 8.69 9.98 8.98 9.69 9.27L9.01 9.98C9.02 10.01 9.03 10.03 9.04 10.05C9.16 10.26 9.4 10.62 9.86 11.16C10.35 11.72 10.81 12.23 11.27 12.7C11.86 13.28 12.35 13.74 12.81 14.12C13.38 14.6 13.75 14.84 13.97 14.95L13.95 15L14.68 14.28C14.99 13.97 15.29 13.74 15.58 13.59C16.13 13.25 16.83 13.19 17.53 13.48C17.79 13.59 18.07 13.74 18.37 13.95L21.69 16.31C22.06 16.56 22.33 16.88 22.49 17.26C22.64 17.64 22.71 17.99 22.71 18.34C22.71 18.82 22.6 19.3 22.39 19.75C22.18 20.2 21.92 20.59 21.59 20.95C21.02 21.58 20.4 22.03 19.68 22.32C18.99 22.6 18.24 22.75 17.45 22.75ZM5.59 2.75C5.04 2.75 4.53 2.99 4.04 3.47C3.58 3.9 3.26 4.37 3.06 4.88C2.85 5.4 2.75 5.95 2.75 6.54C2.75 7.47 2.97 8.48 3.41 9.52C3.86 10.58 4.49 11.68 5.29 12.78C6.09 13.88 7 14.95 8 15.96C9 16.95 10.08 17.87 11.19 18.68C12.27 19.47 13.38 20.11 14.48 20.57C16.19 21.3 17.79 21.47 19.11 20.92C19.62 20.71 20.07 20.39 20.48 19.93C20.71 19.68 20.89 19.41 21.04 19.09C21.16 18.84 21.22 18.58 21.22 18.32C21.22 18.16 21.19 18 21.11 17.82C21.08 17.76 21.02 17.65 20.83 17.52L17.51 15.16C17.31 15.02 17.13 14.92 16.96 14.85C16.74 14.76 16.65 14.67 16.31 14.88C16.11 14.98 15.93 15.13 15.73 15.33L14.97 16.08C14.58 16.46 13.98 16.55 13.52 16.38L13.25 16.26C12.84 16.04 12.36 15.7 11.83 15.25C11.35 14.84 10.83 14.36 10.2 13.74C9.71 13.24 9.22 12.71 8.71 12.12C8.24 11.57 7.9 11.1 7.69 10.71L7.57 10.41C7.51 10.18 7.49 10.05 7.49 9.91C7.49 9.55 7.62 9.23 7.87 8.98L8.62 8.2C8.82 8 8.97 7.81 9.07 7.64C9.15 7.51 9.18 7.4 9.18 7.3C9.18 7.22 9.15 7.1 9.1 6.98C9.03 6.82 8.92 6.64 8.78 6.45L6.46 3.17C6.36 3.03 6.24 2.93 6.09 2.86C5.93 2.79 5.76 2.75 5.59 2.75ZM13.95 15.01L13.79 15.69L14.06 14.99C14.01 14.98 13.97 14.99 13.95 15.01Z" fill="currentColor"/>
               </svg>
-              <span>
+              <span class="">
                 <a class="border-b border-white" href="tel:01798095346">01798095346,</a>
                 <a class="border-b border-white" href="tel:01798095346">01798095346</a>
               </span>
@@ -59,7 +58,7 @@
              Packages
              </a>
              <a 
-             class="text-lg my-2 lg:text-sm lg:mx-6 lg:my-0 font-medium tracking-wide transition duration-300 pb-1 border-b-2 border-transparent hover:border-primary-500 focus:text-primary-500" href="#ftp-server">
+             class="text-lg my-2 lg:text-sm lg:mx-6 lg:my-0 font-medium tracking-wide transition duration-300 pb-1 border-b-2 border-transparent hover:border-primary-500 focus:text-primary-500" href="#contact-us">
              FTP Server
             </a>
             <a 
@@ -87,7 +86,7 @@
 
              <div class="flex flex-col items-center">
                <a class="nav-link text-lg my-2 lg:text-sm lg:mx-6 lg:my-0 font-medium tracking-wide transition duration-300 pb-1 border-b-2 border-transparent hover:border-primary-500 focus:text-primary-500" href="#price-section">Packages</a>
-               <a class="nav-link text-lg my-2 lg:text-sm lg:mx-6 lg:my-0 font-medium tracking-wide transition duration-300 pb-1 border-b-2 border-transparent hover:border-primary-500 focus:text-primary-500" href="#ftp-server">FTP Server</a>
+               <a class="nav-link text-lg my-2 lg:text-sm lg:mx-6 lg:my-0 font-medium tracking-wide transition duration-300 pb-1 border-b-2 border-transparent hover:border-primary-500 focus:text-primary-500" href="#contact-us">FTP Server</a>
                <a class="nav-link text-lg my-2 lg:text-sm lg:mx-6 lg:my-0 font-medium tracking-wide transition duration-300 pb-1 border-b-2 border-transparent hover:border-primary-500 focus:text-primary-500" href="#contact-us">Contact Us</a>
              </div>
            </div>
@@ -103,12 +102,12 @@
             <div class="flex flex-col lg:flex-row justify-between items-center lg:pt-12 max-w-screen-2xl mx-auto sm:px-8">
 
               <div class="mr-auto lg:mr-0 max-w-lg lg:max-w-xl xl:max-w-2xl">
-                <h2 class="leading-normal text-4xl font-black tracking-wide text-left text-primary-900 lg:text-7xl lg:leading-snug">
+                <h2 class="hero-title leading-normal text-4xl font-black tracking-wide text-left text-primary-900 lg:text-7xl lg:leading-snug">
                   Better, Faster and Cheaper internet.
                 </h2>
-                <p class="max-w-lg mt-4 text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <p class="hero-para max-w-lg mt-4 text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
 
-                <a href="#price-section" class="px-8 font-bold bg-primary-500 text-gray-100 hocus:bg-primary-700 hocus:text-gray-200 focus:shadow-outline focus:outline-none transition duration-300 mt-8 inline-block w-56 tracking-wide text-center py-5 rounded-full">Our Packages</a>
+                <a href="#price-section" class="animate__animated animate__jello px-8 font-bold bg-primary-500 text-gray-100 hocus:bg-primary-700 hocus:text-gray-200 focus:shadow-outline focus:outline-none transition duration-300 mt-8 inline-block w-56 tracking-wide text-center py-5 rounded-full">Our Packages</a>
                 
                 <div class="pt-4">
                   <div class="flex items-center m-3">
@@ -251,21 +250,21 @@
 
      <!-- price section -->
 
-     <section id="price-section" class="relative py-16 bg-slate-100/50 lg:py-32">
-      <div class="absolute bottom-0 right-0 opacity-20">
+     <section id="price-section" class="overflow-x-hidden relative py-16 bg-slate-100/50 lg:py-32">
+      <div class="absolute bottom-0 right-20 opacity-20">
         <svg width="600" height="600" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" class="ThreeColWithSideImage__DecoratorBlob-i1jy54-8 kNQlIF"><g transform="translate(300,300)"><path d="M125,-160.4C159.9,-146.7,184.6,-107.3,178.8,-70.9C173.1,-34.4,137,-0.8,128.8,47.3C120.7,95.5,140.6,158.2,123.8,198.4C107,238.6,53.5,256.3,5.4,248.9C-42.7,241.5,-85.4,208.9,-112.7,172.1C-140,135.3,-151.8,94.2,-146.3,59.7C-140.8,25.1,-117.9,-2.9,-104,-30.1C-90.1,-57.3,-85,-83.7,-69.1,-103.5C-53.3,-123.4,-26.6,-136.7,9.2,-149.4C45.1,-162,90.1,-174,125,-160.4Z" fill="#FFB4BC"></path></g></svg>
       </div>
       <div class="container">
-        <div class="text-3xl font-black text-center mb-10 lg:mb-12 lg:text-5xl">
+        <div class="animate__animated animate__jello text-3xl font-black text-center mb-10 lg:mb-12 lg:text-5xl">
           Our Packages
         </div>
         <!-- price card container -->
-        <div class="flex flex-col items-center gap-5 lg:flex-row lg:justify-center lg:items-start lg:gap-11">
+        <div class="flex flex-col items-center gap-5 text-white lg:flex-row lg:justify-center lg:items-start lg:gap-11">
           <!-- price card -->
-          <div class="max-w-xs px-5 py-8 bg-white rounded-lg drop-shadow-md">
-            <p class="text-lg font-bold text-center pb-8">PERSONAL</p>
+          <div class="package-card flex-1 min-w-[320px] bg-primary-100 max-w-xs px-5 py-8 rounded-lg drop-shadow-md">
+            <p class="text-lg font-bold text-center pb-8">BASIC</p>
             <div class="flex items-center pb-8 gap-3">
-              <svg class="w-8 h-8 text-primary-500" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="w-8 h-8 text-primary-900" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M15 22.75H9C3.57 22.75 1.25 20.43 1.25 15V9C1.25 3.57 3.57 1.25 9 1.25H15C20.43 1.25 22.75 3.57 22.75 9V15C22.75 20.43 20.43 22.75 15 22.75ZM9 2.75C4.39 2.75 2.75 4.39 2.75 9V15C2.75 19.61 4.39 21.25 9 21.25H15C19.61 21.25 21.25 19.61 21.25 15V9C21.25 4.39 19.61 2.75 15 2.75H9Z" fill="currentcolor"/>
                 <path d="M10.1801 17.9C9.99008 17.9 9.80008 17.83 9.65008 17.68L6.61008 14.64C6.32008 14.35 6.32008 13.87 6.61008 13.58C6.90008 13.29 7.38008 13.29 7.67008 13.58L10.7101 16.62C11.0001 16.91 11.0001 17.39 10.7101 17.68C10.5701 17.83 10.3801 17.9 10.1801 17.9Z" fill="currentcolor"/>
                 <path d="M10.1802 17.9C9.77018 17.9 9.43018 17.56 9.43018 17.15V6.84998C9.43018 6.43998 9.77018 6.09998 10.1802 6.09998C10.5902 6.09998 10.9302 6.43998 10.9302 6.84998V17.16C10.9302 17.57 10.6002 17.9 10.1802 17.9Z" fill="currentcolor"/>
@@ -274,11 +273,11 @@
                 </svg>                
               <span class="text-3xl font-bold">8 Mbps</span>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <p>Ideal for basic user. </p>
   
             <div class="border-top my-8"></div>
 
-            <div class="pb-5">
+            <!-- <div class="pb-5">
               <div class="flex items-center my-5">
                 <svg viewBox="0 0 24 24" class="w-5 h-5 text-primary-500"><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10     10zm-.997-6l7.07-7.071-1.414-1.414-5.656 5.657-2.829-2.829-1.414 1.414L11.003 16z" fill="currentColor"></path></svg>
                   <span class="font-semibold pl-2 text-primary-900">Available in 7 location</span>
@@ -291,19 +290,19 @@
                 <svg viewBox="0 0 24 24" class="w-5 h-5 text-primary-500"><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10     10zm-.997-6l7.07-7.071-1.414-1.414-5.656 5.657-2.829-2.829-1.414 1.414L11.003 16z" fill="currentColor"></path></svg>
                   <span class="font-semibold pl-2 text-primary-900">Available in 7 location</span>
               </div>
-            </div>
+            </div> -->
 
             <!-- monthly price -->
             <div class="flex items-center justify-center px-6 font-bold border-2 border-primary-500 tracking-wide text-center py-3 rounded-md">
-              <span class="text-2xl font-bold">$500</span>
+              <span class="text-2xl font-bold">TK. 500</span>
               <span class="text-lg font-semibold">/month</span>
             </div>
           </div>
           <!-- price card -->
-          <div class="max-w-xs px-5 py-8 bg-white rounded-lg drop-shadow-md">
-            <p class="text-lg font-bold text-center pb-8">PERSONAL</p>
+          <div class="package-card flex-1 min-w-[320px] bg-primary-100 max-w-xs px-5 py-8 rounded-lg drop-shadow-md">
+            <p class="text-lg font-bold text-center pb-8">STANDARD</p>
             <div class="flex items-center pb-8 gap-3">
-              <svg class="w-8 h-8 text-primary-500" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="w-8 h-8 text-primary-900" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M15 22.75H9C3.57 22.75 1.25 20.43 1.25 15V9C1.25 3.57 3.57 1.25 9 1.25H15C20.43 1.25 22.75 3.57 22.75 9V15C22.75 20.43 20.43 22.75 15 22.75ZM9 2.75C4.39 2.75 2.75 4.39 2.75 9V15C2.75 19.61 4.39 21.25 9 21.25H15C19.61 21.25 21.25 19.61 21.25 15V9C21.25 4.39 19.61 2.75 15 2.75H9Z" fill="currentcolor"/>
                 <path d="M10.1801 17.9C9.99008 17.9 9.80008 17.83 9.65008 17.68L6.61008 14.64C6.32008 14.35 6.32008 13.87 6.61008 13.58C6.90008 13.29 7.38008 13.29 7.67008 13.58L10.7101 16.62C11.0001 16.91 11.0001 17.39 10.7101 17.68C10.5701 17.83 10.3801 17.9 10.1801 17.9Z" fill="currentcolor"/>
                 <path d="M10.1802 17.9C9.77018 17.9 9.43018 17.56 9.43018 17.15V6.84998C9.43018 6.43998 9.77018 6.09998 10.1802 6.09998C10.5902 6.09998 10.9302 6.43998 10.9302 6.84998V17.16C10.9302 17.57 10.6002 17.9 10.1802 17.9Z" fill="currentcolor"/>
@@ -316,7 +315,7 @@
   
             <div class="border-top my-8"></div>
 
-            <div class="pb-5">
+            <!-- <div class="pb-5">
               <div class="flex items-center my-5">
                 <svg viewBox="0 0 24 24" class="w-5 h-5 text-primary-500"><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10     10zm-.997-6l7.07-7.071-1.414-1.414-5.656 5.657-2.829-2.829-1.414 1.414L11.003 16z" fill="currentColor"></path></svg>
                   <span class="font-semibold pl-2 text-primary-900">Available in 7 location</span>
@@ -329,19 +328,19 @@
                 <svg viewBox="0 0 24 24" class="w-5 h-5 text-primary-500"><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10     10zm-.997-6l7.07-7.071-1.414-1.414-5.656 5.657-2.829-2.829-1.414 1.414L11.003 16z" fill="currentColor"></path></svg>
                   <span class="font-semibold pl-2 text-primary-900">Available in 7 location</span>
               </div>
-            </div>
+            </div> -->
 
             <!-- monthly price -->
             <div class="flex items-center justify-center px-6 font-bold border-2 border-primary-500 tracking-wide text-center py-3 rounded-md">
-              <span class="text-2xl font-bold">$500</span>
+              <span class="text-2xl font-bold">TK. 600</span>
               <span class="text-lg font-semibold">/month</span>
             </div>
           </div>
           <!-- price card -->
-          <div class="max-w-xs px-5 py-8 bg-white rounded-lg drop-shadow-md">
-            <p class="text-lg font-bold text-center pb-8">PERSONAL</p>
+          <div class="package-card flex-1 min-w-[320px] bg-primary-100 max-w-xs px-5 py-8 rounded-lg drop-shadow-md">
+            <p class="text-lg font-bold text-center pb-8">PLUS</p>
             <div class="flex items-center pb-8 gap-3">
-              <svg class="w-8 h-8 text-primary-500" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="w-8 h-8 text-primary-900" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M15 22.75H9C3.57 22.75 1.25 20.43 1.25 15V9C1.25 3.57 3.57 1.25 9 1.25H15C20.43 1.25 22.75 3.57 22.75 9V15C22.75 20.43 20.43 22.75 15 22.75ZM9 2.75C4.39 2.75 2.75 4.39 2.75 9V15C2.75 19.61 4.39 21.25 9 21.25H15C19.61 21.25 21.25 19.61 21.25 15V9C21.25 4.39 19.61 2.75 15 2.75H9Z" fill="currentcolor"/>
                 <path d="M10.1801 17.9C9.99008 17.9 9.80008 17.83 9.65008 17.68L6.61008 14.64C6.32008 14.35 6.32008 13.87 6.61008 13.58C6.90008 13.29 7.38008 13.29 7.67008 13.58L10.7101 16.62C11.0001 16.91 11.0001 17.39 10.7101 17.68C10.5701 17.83 10.3801 17.9 10.1801 17.9Z" fill="currentcolor"/>
                 <path d="M10.1802 17.9C9.77018 17.9 9.43018 17.56 9.43018 17.15V6.84998C9.43018 6.43998 9.77018 6.09998 10.1802 6.09998C10.5902 6.09998 10.9302 6.43998 10.9302 6.84998V17.16C10.9302 17.57 10.6002 17.9 10.1802 17.9Z" fill="currentcolor"/>
@@ -354,7 +353,7 @@
   
             <div class="border-top my-8"></div>
 
-            <div class="pb-5">
+            <!-- <div class="pb-5">
               <div class="flex items-center my-5">
                 <svg viewBox="0 0 24 24" class="w-5 h-5 text-primary-500"><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10     10zm-.997-6l7.07-7.071-1.414-1.414-5.656 5.657-2.829-2.829-1.414 1.414L11.003 16z" fill="currentColor"></path></svg>
                   <span class="font-semibold pl-2 text-primary-900">Available in 7 location</span>
@@ -367,11 +366,11 @@
                 <svg viewBox="0 0 24 24" class="w-5 h-5 text-primary-500"><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10     10zm-.997-6l7.07-7.071-1.414-1.414-5.656 5.657-2.829-2.829-1.414 1.414L11.003 16z" fill="currentColor"></path></svg>
                   <span class="font-semibold pl-2 text-primary-900">Available in 7 location</span>
               </div>
-            </div>
+            </div> -->
 
             <!-- monthly price -->
             <div class="flex items-center justify-center px-6 font-bold border-2 border-primary-500 tracking-wide text-center py-3 rounded-md">
-              <span class="text-2xl font-bold">$500</span>
+              <span class="text-2xl font-bold">TK. 1000</span>
               <span class="text-lg font-semibold">/month</span>
             </div>
           </div>
@@ -381,19 +380,61 @@
      </section>
 
 
-     <footer id="contact-us" class="bg-white pt-16 lg:pt-32">
+     <footer id="contact-us" class="overflow-x-hidden bg-white pt-16 lg:pt-32 relative">
       <div class="container">
-        <div class="text-3xl font-black text-center mb-4 lg:mb-12 lg:text-5xl">
-          Contact 
-          <span class="text-primary-500"> Us</span>
-        </div>
-
-        <div class="flex justify-center text-base font-semibold gap-10 lg:text-xl">
-          <div class="hidden flex-none w-96 h-[500px] bg-black rounded-md md:block">
+        <div class="flex flex-col justify-center text-base font-semibold gap-10 md:flex-row md:text-xl">
+          <!-- <div class="hidden flex-none w-96 h-[500px] bg-black rounded-md md:block">
             <img class="w-full h-full bg-cover" src="./public/navigation.jpg" alt="">
+          </div> -->
+
+          <div class="flex-1">
+            <div class="text-2xl font-black mb-4 lg:mb-12 lg:text-3xl">
+              FTP & Live Tv
+            </div>
+            <div class="flex flex-col gap-3 text-primary-600 font-semibold md:flex-row md:w-96 md:flex-wrap">
+              <a target="_blank" class="ftp-link underline flex items-center mb-3" href="http://10.16.100.244/">
+                <svg class="w-6 h-6 mr-1" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13.0615 10.9399C15.3115 13.1899 15.3115 16.8299 13.0615 19.0699C10.8115 21.3099 7.17146 21.3199 4.93146 19.0699C2.69146 16.8199 2.68146 13.1799 4.93146 10.9399" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M10.5915 13.41C8.25146 11.07 8.25146 7.27001 10.5915 4.92001C12.9315 2.57001 16.7315 2.58001 19.0815 4.92001C21.4315 7.26001 21.4215 11.06 19.0815 13.41" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  Icc server             
+              </a>
+              <a target="_blank" class="ftp-link underline flex items-center mb-3" href="http://circleftp.net/">
+                <svg class="w-6 h-6 mr-1" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13.0615 10.9399C15.3115 13.1899 15.3115 16.8299 13.0615 19.0699C10.8115 21.3099 7.17146 21.3199 4.93146 19.0699C2.69146 16.8199 2.68146 13.1799 4.93146 10.9399" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M10.5915 13.41C8.25146 11.07 8.25146 7.27001 10.5915 4.92001C12.9315 2.57001 16.7315 2.58001 19.0815 4.92001C21.4315 7.26001 21.4215 11.06 19.0815 13.41" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  Circle Ftp             
+              </a>
+              <a target="_blank" class="ftp-link underline flex items-center mb-3" href="http://bciptv.net/">
+                <svg class="w-6 h-6 mr-1" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13.0615 10.9399C15.3115 13.1899 15.3115 16.8299 13.0615 19.0699C10.8115 21.3099 7.17146 21.3199 4.93146 19.0699C2.69146 16.8199 2.68146 13.1799 4.93146 10.9399" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M10.5915 13.41C8.25146 11.07 8.25146 7.27001 10.5915 4.92001C12.9315 2.57001 16.7315 2.58001 19.0815 4.92001C21.4315 7.26001 21.4215 11.06 19.0815 13.41" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  Live Tv1             
+              </a>
+              <a target="_blank" class="ftp-link underline flex items-center mb-3" href="http://bdiptv.net/">
+                <svg class="w-6 h-6 mr-1" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13.0615 10.9399C15.3115 13.1899 15.3115 16.8299 13.0615 19.0699C10.8115 21.3099 7.17146 21.3199 4.93146 19.0699C2.69146 16.8199 2.68146 13.1799 4.93146 10.9399" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M10.5915 13.41C8.25146 11.07 8.25146 7.27001 10.5915 4.92001C12.9315 2.57001 16.7315 2.58001 19.0815 4.92001C21.4315 7.26001 21.4215 11.06 19.0815 13.41" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  Live Tv2             
+              </a>
+              <a target="_blank" class="ftp-link underline flex items-center mb-3" href="http://10.16.100.244/livetv.php">
+                <svg class="w-6 h-6 mr-1" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13.0615 10.9399C15.3115 13.1899 15.3115 16.8299 13.0615 19.0699C10.8115 21.3099 7.17146 21.3199 4.93146 19.0699C2.69146 16.8199 2.68146 13.1799 4.93146 10.9399" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M10.5915 13.41C8.25146 11.07 8.25146 7.27001 10.5915 4.92001C12.9315 2.57001 16.7315 2.58001 19.0815 4.92001C21.4315 7.26001 21.4215 11.06 19.0815 13.41" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  Live Tv3           
+              </a>
+            </div>
           </div>
 
-          <div class="pt-10 md:pt-20">
+          <div class="flex-1">
+            <div class="text-2xl font-black mb-4 lg:mb-12 lg:text-3xl">
+              Contact Us
+            </div>
+
             <div class="flex justify-start items-center gap-3 pb-8">
               <svg class="w-6 h-6 text-primary-400" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M22 9.00002V15C22 17.5 21.5 19.25 20.38 20.38L14 14L21.73 6.27002C21.91 7.06002 22 7.96002 22 9.00002Z" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
