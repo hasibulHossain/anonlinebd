@@ -35,15 +35,12 @@ packagesCard.forEach((element, i) => {
 
 // FTP links
 
-const ftpLinks = document.querySelectorAll<HTMLAnchorElement>('.ftp-link');
-ftpLinks.forEach((element, i) => {
-    gsap.from(element, {
-       scrollTrigger: {
-        trigger: element,
-        start: 'top 90%',
-       },
-       duration: 1,
-       stagger: 0.8,
-       x: '-50%'
-    })
+gsap.from('.ftp-link', {
+   scrollTrigger: {
+    trigger: '.ftp-link',
+    start: 'top 90%',
+   },
+   duration: 1,
+   stagger: 0.2,
+   x: '-50%'
 })
