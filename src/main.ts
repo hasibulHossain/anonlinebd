@@ -1,8 +1,8 @@
-import './animation';
-import './side-menu';
 import i18next from 'i18next';
 import languageDetector from 'i18next-browser-languagedetector';
 import httpApi from 'i18next-http-backend';
+import './animation';
+import './side-menu';
 
 /**
  * Will instantiate i18next object 
