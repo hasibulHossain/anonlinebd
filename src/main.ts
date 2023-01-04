@@ -14,7 +14,7 @@ export async function initi18next() {
   .use(languageDetector)
   .init({
     lng: 'en',
-    debug: true,
+    // debug: true,
     supportedLngs: ['en', 'bn'],
     fallbackLng: 'en',
     backend: {
@@ -29,13 +29,19 @@ export async function initi18next() {
  * @return void
  */
 function bindLanguageSwitcher (initialValue: string) {
-  const languageSwitcher = document.querySelector<HTMLSelectElement>('[data-i18n-switcher]');
-  languageSwitcher!.value = initialValue;
-  
-  languageSwitcher?.addEventListener('change', (e) => {
-    const target = e.target as HTMLSelectElement;
-    i18next.changeLanguage(target.value).then((_) => translatePageElements());
+  const languageSwitchers = document.querySelectorAll<HTMLSelectElement>('[data-i18n-switcher]');
+
+  languageSwitchers.forEach((el: HTMLSelectElement) => {
+    const languageSwitcher = el;
+
+    languageSwitcher!.value = initialValue;
+    
+    languageSwitcher?.addEventListener('change', (e) => {
+      const target = e.target as HTMLSelectElement;
+      i18next.changeLanguage(target.value).then((_) => translatePageElements());
+    })
   })
+
 }
 
 /**
