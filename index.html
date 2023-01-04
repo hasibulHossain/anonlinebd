@@ -14,8 +14,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
     
     <title>Anonline</title>
-    <script type="module" crossorigin src="/assets/index.a5aec4bf.js"></script>
-    <link rel="stylesheet" href="/assets/index.dd161c8c.css">
+    <script type="module" crossorigin src="/assets/index.03f180d6.js"></script>
+    <link rel="stylesheet" href="/assets/index.cca002d3.css">
   </head>
   <body class="font-sans text-sm md:text-base">
     <!-- backdrop -->
@@ -30,7 +30,7 @@
       </div>
       <div class="hero-background-gradient absolute inset-0"></div>
       <div class="hidden bg-gray-900 px-16 py-2 justify-between relative -mx-8 text-white text-sm md:flex">
-        <div>Welcome to Anonlinebd</div>
+        <div data-i18n-key="greeting" >Welcome to Anonlinebd</div>
         <div class="flex gap-4">
           <div class="flex items-center gap-2">
             <svg class="text-white w-4 h-4" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -50,6 +50,10 @@
               </svg>              
               <span>anonlinebd@gmail.com</span>
           </div>
+          <select class="bg-primary-500 rounded-sm focus:outline-none" name="language-switcher" id="language-switcher" data-i18n-switcher>
+            <option value="en">En</option>
+            <option value="bn">Bn</option>
+          </select>
         </div>
       </div>
 
@@ -60,15 +64,15 @@
              Anonline
            </a>
            <div class="inline-block">
-             <a 
+             <a data-i18n-key="packages"
              class="text-lg my-2 lg:text-sm lg:mx-6 lg:my-0 font-medium tracking-wide transition duration-300 pb-1 border-b-2 border-transparent hover:border-primary-500 focus:text-primary-500" href="#price-section">
              Packages
              </a>
-             <a 
+             <a data-i18n-key="ftp-server"
              class="text-lg my-2 lg:text-sm lg:mx-6 lg:my-0 font-medium tracking-wide transition duration-300 pb-1 border-b-2 border-transparent hover:border-primary-500 focus:text-primary-500" href="#contact-us">
              FTP Server
             </a>
-            <a 
+            <a data-i18n-key="contact-us"
             class="text-lg my-2 lg:text-sm lg:mx-6 lg:my-0 font-medium tracking-wide transition duration-300 pb-1 border-b-2 border-transparent hover:border-primary-500 focus:text-primary-500" href="#contact-us">
             Contact Us
              </a>
@@ -81,7 +85,6 @@
            pb-1 border-transparent flex items-center font-black border-b-0 text-2xl ml-0" href="#">
              Anonline
            </a>
-   
            <div class="mobile-navigation transition-transform delay-75 lg:hidden z-40 fixed top-7 inset-x-0 mx-4 my-6 p-8 border text-center rounded-lg text-gray-900 bg-white">
 
             <button class="absolute top-4 right-5 navigation-toggle-close-btn z-40 w-6 h-6 bg-transparent lg:hidden focus:outline-none hover:text-primary-500 transition duration-300">
@@ -90,16 +93,22 @@
             </button>
 
              <div class="flex flex-col items-center">
-               <a class="nav-link text-lg my-2 lg:text-sm lg:mx-6 lg:my-0 font-medium tracking-wide transition duration-300 pb-1 border-b-2 border-transparent hover:border-primary-500 focus:text-primary-500" href="#price-section">Packages</a>
-               <a class="nav-link text-lg my-2 lg:text-sm lg:mx-6 lg:my-0 font-medium tracking-wide transition duration-300 pb-1 border-b-2 border-transparent hover:border-primary-500 focus:text-primary-500" href="#contact-us">FTP Server</a>
-               <a class="nav-link text-lg my-2 lg:text-sm lg:mx-6 lg:my-0 font-medium tracking-wide transition duration-300 pb-1 border-b-2 border-transparent hover:border-primary-500 focus:text-primary-500" href="#contact-us">Contact Us</a>
+               <a class="nav-link text-lg my-2 lg:text-sm lg:mx-6 lg:my-0 font-medium tracking-wide transition duration-300 pb-1 border-b-2 border-transparent hover:border-primary-500 focus:text-primary-500" href="#price-section" data-i18n-key="packages">Packages</a>
+               <a class="nav-link text-lg my-2 lg:text-sm lg:mx-6 lg:my-0 font-medium tracking-wide transition duration-300 pb-1 border-b-2 border-transparent hover:border-primary-500 focus:text-primary-500" href="#contact-us" data-i18n-key="ftp-server">FTP Server</a>
+               <a class="nav-link text-lg my-2 lg:text-sm lg:mx-6 lg:my-0 font-medium tracking-wide transition duration-300 pb-1 border-b-2 border-transparent hover:border-primary-500 focus:text-primary-500" href="#contact-us" data-i18n-key="contact-us">Contact Us</a>
              </div>
            </div>
-           <button class="navigation-toggle-btn z-40 w-6 h-6 bg-transparent lg:hidden focus:outline-none hover:text-primary-500 transition duration-300">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15" fill="none">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M1.5 3C1.22386 3 1 3.22386 1 3.5C1 3.77614 1.22386 4 1.5 4H13.5C13.7761 4 14 3.77614 14 3.5C14 3.22386 13.7761 3 13.5 3H1.5ZM1 7.5C1 7.22386 1.22386 7 1.5 7H13.5C13.7761 7 14 7.22386 14 7.5C14 7.77614 13.7761 8 13.5 8H1.5C1.22386 8 1 7.77614 1 7.5ZM1 11.5C1 11.2239 1.22386 11 1.5 11H13.5C13.7761 11 14 11.2239 14 11.5C14 11.7761 13.7761 12 13.5 12H1.5C1.22386 12 1 11.7761 1 11.5Z" fill="currentColor"/>
-            </svg>
-           </button>
+           <div class="flex items-center z-40 gap-4">
+            <select class="bg-primary-500 rounded-sm focus:outline-none" name="language-switcher" id="language-switcher" data-i18n-switcher>
+              <option value="en">En</option>
+              <option value="bn">Bn</option>
+            </select>
+             <button class="navigation-toggle-btn w-6 h-6 bg-transparent lg:hidden focus:outline-none hover:text-primary-500 transition duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.5 3C1.22386 3 1 3.22386 1 3.5C1 3.77614 1.22386 4 1.5 4H13.5C13.7761 4 14 3.77614 14 3.5C14 3.22386 13.7761 3 13.5 3H1.5ZM1 7.5C1 7.22386 1.22386 7 1.5 7H13.5C13.7761 7 14 7.22386 14 7.5C14 7.77614 13.7761 8 13.5 8H1.5C1.22386 8 1 7.77614 1 7.5ZM1 11.5C1 11.2239 1.22386 11 1.5 11H13.5C13.7761 11 14 11.2239 14 11.5C14 11.7761 13.7761 12 13.5 12H1.5C1.22386 12 1 11.7761 1 11.5Z" fill="currentColor"/>
+              </svg>
+             </button>
+           </div>
          </nav>
        </header>
        <div class="relative z-20">
@@ -107,32 +116,32 @@
             <div class="flex flex-col lg:flex-row justify-between items-center lg:pt-12 max-w-screen-2xl mx-auto sm:px-8">
 
               <div class="mr-auto lg:mr-0 max-w-lg lg:max-w-xl xl:max-w-2xl">
-                <h2 class="hero-title leading-normal text-4xl font-black tracking-wide text-left text-primary-600 lg:text-7xl lg:leading-snug">
+                <h2 data-i18n-key="hero-title" class="hero-title leading-normal text-4xl font-black tracking-wide text-left text-primary-600 lg:text-7xl lg:leading-snug">
                   Better, Faster and Cheaper internet.
                 </h2>
-                <p class="hero-para max-w-lg mt-4 text-lg">If you want to start with us, look over all of our internet plans and other plans to see which one is right for you! We guarantee high-quality customer support service.</p>
+                <p data-i18n-key="hero-description" class="hero-para max-w-lg mt-4 text-lg">If you want to start with us, look over all of our internet plans and other plans to see which one is right for you! We guarantee high-quality customer support service.</p>
 
-                <a href="#price-section" class="animate__animated animate__jello px-8 font-bold bg-primary-500 text-gray-100 hocus:bg-primary-700 hocus:text-gray-200 focus:shadow-outline focus:outline-none transition duration-300 mt-8 inline-block w-56 tracking-wide text-center py-5 rounded-full">Our Packages</a>
+                <a href="#price-section" class="animate__animated animate__jello px-8 font-bold bg-primary-500 text-gray-100 hocus:bg-primary-700 hocus:text-gray-200 focus:shadow-outline focus:outline-none transition duration-300 mt-8 inline-block w-56 tracking-wide text-center py-5 rounded-full" data-i18n-key="our-packages">Our Packages</a>
                 
                 <div class="pt-4">
                   <div class="flex items-center m-3">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-primary-500"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-                      <span class="font-medium pl-2">24 hours customer support</span>
+                      <span data-i18n-key="24-customer-support" class="font-medium pl-2">24 hours customer support</span>
                   </div>
                   <div class="flex items-center m-3">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-primary-500"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-                      <span class="font-medium pl-2">FTV Server & Live Tv</span>
+                      <span class="font-medium pl-2" data-i18n-key="ftp-live-tv">FTV Server & Live Tv</span>
                   </div>
                   <div class="flex items-center m-3">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-primary-500"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-                      <span class="font-medium pl-2">Super Fast Internet</span>
+                      <span class="font-medium pl-2" data-i18n-key="super-fast-internet">Super Fast Internet</span>
                   </div>
                 </div>
               </div>
 
               <div class="hidden mr-auto lg:mr-0 max-w-lg lg:max-w-xl xl:max-w-2xl self-start md:block">
                   <div style="backdrop-filter: blur(20px);" class="z-10 max-w-xs px-5 py-8 bg-primary-50 rounded-lg drop-shadow-2xl bg-opacity-70 bg-clip-padding">
-                    <p class="text-lg font-bold text-center pb-4">BASIC</p>
+                    <p class="text-lg font-bold text-center pb-4" data-i18n-key="basic" >BASIC</p>
                     <div class="flex items-center pb-8 gap-3">
                         <svg class="w-8 h-8 text-primary-500" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M15 22.75H9C3.57 22.75 1.25 20.43 1.25 15V9C1.25 3.57 3.57 1.25 9 1.25H15C20.43 1.25 22.75 3.57 22.75 9V15C22.75 20.43 20.43 22.75 15 22.75ZM9 2.75C4.39 2.75 2.75 4.39 2.75 9V15C2.75 19.61 4.39 21.25 9 21.25H15C19.61 21.25 21.25 19.61 21.25 15V9C21.25 4.39 19.61 2.75 15 2.75H9Z" fill="currentcolor"/>
@@ -141,27 +150,27 @@
                           <path d="M16.8598 10.64C16.6698 10.64 16.4798 10.57 16.3298 10.42L13.2898 7.38004C12.9998 7.09004 12.9998 6.61004 13.2898 6.32004C13.5798 6.03004 14.0598 6.03004 14.3498 6.32004L17.3898 9.36004C17.6798 9.65004 17.6798 10.13 17.3898 10.42C17.2398 10.56 17.0498 10.64 16.8598 10.64Z" fill="currentcolor"/>
                           <path d="M13.8198 17.9C13.4098 17.9 13.0698 17.56 13.0698 17.15V6.84998C13.0698 6.43998 13.4098 6.09998 13.8198 6.09998C14.2298 6.09998 14.5698 6.43998 14.5698 6.84998V17.16C14.5698 17.57 14.2298 17.9 13.8198 17.9Z" fill="currentcolor"/>
                           </svg>                
-                        <span class="text-3xl font-bold">8 Mbps</span>
+                        <span class="text-3xl font-bold" data-i18n-key="8-mbps" >8 Mbps</span>
                     </div>
-                    <span class="inline-block text-xs uppercase font-bold text-white px-3 bg-gradient-to-r from-primary-300 to-primary-600 tracking-wide text-center py-2 rounded-md mb-3">
+                    <span data-i18n-key="most-popular" class="inline-block text-xs uppercase font-bold text-white px-3 bg-gradient-to-r from-primary-300 to-primary-600 tracking-wide text-center py-2 rounded-md mb-3">
                       Most Popular
                     </span>
-                    <p>Optic fiber connection, 24 hours unlimited, Customer support</p>
+                    <p data-i18n-key="package-card-description">Optic fiber connection, 24 hours unlimited, Customer support</p>
           
                     <div class="border-top my-8"></div>
         
                     <div class="pb-5">
                       <div class="flex items-center my-5">
                         <svg viewBox="0 0 24 24" class="w-5 h-5 text-primary-500"><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10     10zm-.997-6l7.07-7.071-1.414-1.414-5.656 5.657-2.829-2.829-1.414 1.414L11.003 16z" fill="currentColor"></path></svg>
-                          <span class="font-semibold pl-2 text-primary-600">24 hours unlimited</span>
+                          <span data-i18n-key="24-hours-unlimited" class="font-semibold pl-2 text-primary-600">24 hours unlimited</span>
                       </div>
                       <div class="flex items-center my-5">
                         <svg viewBox="0 0 24 24" class="w-5 h-5 text-primary-500"><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10     10zm-.997-6l7.07-7.071-1.414-1.414-5.656 5.657-2.829-2.829-1.414 1.414L11.003 16z" fill="currentColor"></path></svg>
-                          <span class="font-semibold pl-2 text-primary-600">Fiver optics</span>
+                          <span data-i18n-key="fiver-optics" class="font-semibold pl-2 text-primary-600">Fiver optics</span>
                       </div>
                       <div class="flex items-center my-5">
                         <svg viewBox="0 0 24 24" class="w-5 h-5 text-primary-500"><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10     10zm-.997-6l7.07-7.071-1.414-1.414-5.656 5.657-2.829-2.829-1.414 1.414L11.003 16z" fill="currentColor"></path></svg>
-                          <span class="font-semibold pl-2 text-primary-600">Customer support</span>
+                          <span data-i18n-key="customer-support" class="font-semibold pl-2 text-primary-600">Customer support</span>
                       </div>
                     </div>
         
